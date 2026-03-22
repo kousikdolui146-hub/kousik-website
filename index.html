@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Kousik Portfolio</title>
+
   <style>
     body {
       margin: 0;
@@ -21,10 +22,34 @@
       margin: 10px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: orange;
     }
 
     section {
       padding: 40px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
     }
 
     .btn {
@@ -33,6 +58,11 @@
       color: black;
       text-decoration: none;
       border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
     }
   </style>
 </head>
@@ -53,18 +83,24 @@
 </section>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>I am from India and learning website development using mobile 📱</p>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I am from India and learning website development using mobile 📱</p>
+  </div>
 </section>
 
 <section id="skills">
-  <h2>My Skills</h2>
-  <p>HTML, CSS, JavaScript</p>
+  <div class="card">
+    <h2>My Skills</h2>
+    <p>HTML, CSS, JavaScript</p>
+  </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Me</h2>
-  <a class="btn" href="https://www.facebook.com/share/1J4QvYEGqd/">Facebook</a>
+  <div class="card">
+    <h2>Contact Me</h2>
+    <a class="btn" href="https://www.facebook.com/share/1J4QvYEGqd/">Facebook</a>
+  </div>
 </section>
 
 </body>
