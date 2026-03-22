@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kousik Portfolio</title>
+  <title>Kousik Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to right, #000428, #004e92);
+      color: white;
+      text-align: center;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: linear-gradient(135deg, #1e1e2f, #121212);
-            color: white;
-            text-align: center;
-        }
+    nav {
+      background: #111;
+      padding: 15px;
+    }
 
-        header {
-            padding: 20px;
-            font-size: 26px;
-            font-weight: bold;
-        }
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        img {
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 4px solid orange;
-        }
+    section {
+      padding: 40px;
+    }
 
-        section {
-            padding: 20px;
-        }
-
-        h2 {
-            color: orange;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: orange;
-            border: none;
-            border-radius: 20px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background-color: red;
-            transform: scale(1.1);
-        }
-    </style>
+    .btn {
+      background: orange;
+      padding: 10px 20px;
+      color: black;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    🚀 Kousik Portfolio
-</header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 <section>
-    <img src="kousik.hub.jpg" width="150" style="border-radius:50%;">
-    <h2>Hello, I'm Kousik 👋</h2>
-    <p>I am learning Web Development 😎</p>
+  <h1>🚀 Kousik Portfolio</h1>
+  <h2>Hello, I'm Kousik 👋</h2>
+  <p>I am learning Web Development 😎</p>
 </section>
 
-<section>
-    <h2>My Skills</h2>
-    <p>HTML, CSS, JavaScript ,...</p>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am from India and learning website development using mobile 📱</p>
 </section>
 
-<section>
-    <h2>Contact Me</h2>
-    <a href="https://www.facebook.com/share/1J4QvYEGqd/" target="_blank">
-        <button>Facebook</button>
-    </a>
+<section id="skills">
+  <h2>My Skills</h2>
+  <p>HTML, CSS, JavaScript</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <a class="btn" href="https://www.facebook.com/share/1J4QvYEGqd/">Facebook</a>
 </section>
 
 </body>
